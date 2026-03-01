@@ -57,4 +57,5 @@ El proyecto consiste en el diseño y desarrollo de la interfaz web del Sistema d
 * Diseño del calendario interactivo para la solicitud visual de vacaciones.
 * Implementación de formularios visuales para registro de labores, creación de proyectos y gestión de solicitudes.
 
-![Logo VoluntWeb](logos/voluntweb.png) VoluntWeb 2026 &copy;
+![Logo VoluntWeb](logos/voluntweb.png)  
+VoluntWeb 2026 &copy;
