@@ -1,0 +1,32 @@
+# Detalles sobre los Wireframes y Diseño
+
+**A continuación se muestra una explicación general del flujo y los Wireframes para las páginas. PDFs con alta resolución pueden ser accedidos mediante los links proporcionados en el documento.**
+
+1. Al iniciar el usuario llega a una selección de portal. Puede seleccionar entre el portal de IT, Administrador y Usuario.  
+
+![Portal](/docs/Wireframes/img/Portal.png)  
+**Link al PDF de la página:** [Selección de Portal](/docs/Wireframes/Pagina%20Principal.pdf)
+## Portal de Administrador
+El portal de Administrador consta de 4 secciones distintas.
+### Página de Inicio
+La [Pantalla de Inicio](/docs/Wireframes/Portal%20Administrador.pdf) da un acceso rápido al resto de páginas. Las diversas secciones pueden accederse desde el navegador en la parte superior, o utilizando los diversos links a lo largo de la página.
+Desde está página los usuarios pueden utilizar el calendario y los botones para definir feriados y bloquear fechas para que los empleados no puedan sacar vacaciones. 
+![Bloqueo](/docs/Wireframes/img/Bloqueo.png)  
+Utilizando el link de **Revisar Solicitud**, el pop-up con la información de la solicitud del empleado aparecerá y permite al usuario aprobar o denegar la solicitud.
+![Vacaciones](/docs/Wireframes/img/Vacaciones.png) 
+**Link a PDF del pop-up:** [Aprobar Vacaciones](/docs/Wireframes/Aprobar%20Vacaciones.pdf) 
+### Página de Vacaciones
+La [Pantalla de Vacaciones](/docs/Wireframes/Pagina%20Vacaciones.pdf) permite a los administradores revisar los estados de todas las solicitudes de vacaciones. Del lado derecho ofrece la opción de aplicar filtros por el estado y/o nombre de empleado.
+![Filtro](/docs/Wireframes/img/Filtro%20Usuario.png) 
+### Página de Usuario
+Los Administradores también de ser capaces de tramitar sus propias vacaciones y actividades. Por lo que tienen su propia sección. Las instrucciones y funcionamiento de la misma son iguales a las mostradas en [Portal de Usuario](#portal-de-usuario).
+### Página de Proyectos
+La [Pagina Proyectos](/docs/Wireframes/Proyectos.pdf) da una visión general de las métricas para los diferentes proyectos.
+
+En términos de funcionalidad, permite a los usuarios ver una vista general de todos los proyectos o pueden limitar la información para un proyecto en específico.
+Muestra métricas de efectividad, productividad así como la cantidad de horas trabajadas por cada empleado.
+
+![Proyectos Filtados](/docs/Wireframes/img/Filtrado.png) 
+**Link a PDF de la versión filtrada:** [Proyecto Filtrado](/docs/Wireframes/Proyecto%20(Filtrado).pdf) 
+## Portal de Usuario
+## Portal de IT
