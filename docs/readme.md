@@ -29,6 +29,11 @@ Muestra métricas de efectividad, productividad así como la cantidad de horas t
 ![Proyectos Filtados](/docs/Wireframes/img/Filtrado.png) 
 **Link a PDF de la versión filtrada:** [Proyecto Filtrado](/docs/Wireframes/Proyecto%20(Filtrado).pdf) 
 ## Portal de Usuario
+El [Portal de Usuario](/docs/Wireframes/Portal%20Usuario%20Admin.pdf) corresponde a una único página que le permite al usuario seleccionar días de vacaciones y enviar una solicitud. Adicionalmente el usuario puede generar su reporte diario de actividades. En este reporte el usuario debe de escribir el nombre del proyecto, actividad y lo agrega al reporte.
+
+![Usuario](/docs/Wireframes/img/Usuario.png)
+
+
 ## Portal de IT
 
 El Portal de Personal de TI está orientado a la gestión técnica de los proyectos dentro de la organización. Su función principal es estructurar el entorno de trabajo donde posteriormente los colaboradores registrarán sus actividades.
