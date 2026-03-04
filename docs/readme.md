@@ -39,6 +39,7 @@ A continuación se muestra una explicación general del flujo y funcionamiento d
 Los PDFs en alta resolución pueden ser accedidos mediante los links proporcionados en el documento principal.
 
 Portal de Personal de TI
+<img width="2000" height="3000" alt="image" src="https://github.com/user-attachments/assets/d551b1aa-4947-47a0-ad01-35eaef7411b0" />
 
 El Portal de Personal de TI está orientado a la gestión técnica de los proyectos dentro de la organización.
 Su función principal es estructurar el entorno de trabajo donde posteriormente los colaboradores registrarán sus actividades.
