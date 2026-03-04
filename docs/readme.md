@@ -30,3 +30,129 @@ Muestra métricas de efectividad, productividad así como la cantidad de horas t
 **Link a PDF de la versión filtrada:** [Proyecto Filtrado](/docs/Wireframes/Proyecto%20(Filtrado).pdf) 
 ## Portal de Usuario
 ## Portal de IT
+
+
+Portal de Personal de TI
+Detalles sobre los Wireframes y Diseño
+
+A continuación se muestra una explicación general del flujo y funcionamiento del Portal de Personal de TI.
+Los PDFs en alta resolución pueden ser accedidos mediante los links proporcionados en el documento principal.
+
+Portal de Personal de TI
+
+El Portal de Personal de TI está orientado a la gestión técnica de los proyectos dentro de la organización.
+Su función principal es estructurar el entorno de trabajo donde posteriormente los colaboradores registrarán sus actividades.
+
+El portal consta de cuatro secciones principales.
+
+Página de Inicio (Dashboard TI)
+
+La Pantalla de Inicio brinda una vista general del estado actual de los proyectos registrados en el sistema.
+
+Funcionamiento:
+
+Al ingresar al portal, el usuario visualiza tarjetas resumen con:
+
+Total de proyectos
+
+Proyectos activos
+
+Colaboradores asignados
+
+Desde esta sección puede acceder rápidamente a:
+
+Crear un nuevo proyecto
+
+Gestionar proyectos existentes
+
+Administrar asignaciones
+
+El dashboard funciona como punto central de navegación hacia las demás secciones.
+
+Página de Gestión de Proyectos
+
+Esta sección permite visualizar todos los proyectos registrados en el sistema.
+
+Funcionamiento:
+
+Se muestra una tabla con la información general de cada proyecto:
+
+Nombre
+
+Presupuesto
+
+Recursos asignados
+
+Estado
+
+El usuario puede:
+
+Filtrar proyectos por estado
+Buscar por nombre
+Editar información
+Eliminar proyectos
+Al seleccionar editar, el sistema redirige a la pantalla de edición donde se pueden modificar los datos del proyecto.
+
+Si se elimina un proyecto, este deja de estar disponible para asignaciones y reportes.
+
+Página de Crear Proyecto
+
+Permite registrar un nuevo proyecto en el sistema.
+
+Funcionamiento:
+
+El usuario completa un formulario con:
+
+Nombre del proyecto
+
+Descripción
+
+Presupuesto
+
+Recursos asignados
+
+Fecha de inicio
+
+Fecha de finalización
+
+Al presionar “Guardar”:
+
+El proyecto se almacena en el sistema.
+
+Aparece automáticamente en la tabla de gestión.
+
+Queda disponible para asignar colaboradores.
+
+Si se presiona “Cancelar”, el sistema descarta los datos ingresados.
+
+Página de Asignación de Colaboradores
+
+Esta sección permite asociar empleados a proyectos específicos.
+
+Funcionamiento:
+
+El usuario selecciona un proyecto desde un menú desplegable.
+
+Se muestra una lista de colaboradores disponibles.
+
+Puede seleccionar uno o varios empleados.
+
+Al presionar “Asignar colaboradores”:
+
+Los empleados quedan vinculados al proyecto.
+
+Aparecen en la tabla de asignaciones activas.
+
+Esta funcionalidad es esencial, ya que únicamente los colaboradores asignados podrán registrar reportes diarios en ese proyecto.
+
+Flujo General del Portal TI
+
+El usuario ingresa al Portal de TI.
+
+Desde el Dashboard puede crear o gestionar proyectos.
+
+Una vez creado un proyecto, procede a asignar colaboradores.
+
+Los colaboradores asignados pueden registrar actividades en el Portal de Usuario.
+
+Este flujo garantiza orden, trazabilidad y control estructural dentro del sistema.
