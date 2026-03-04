@@ -73,6 +73,7 @@ Administrar asignaciones
 El dashboard funciona como punto central de navegación hacia las demás secciones.
 
 Página de Gestión de Proyectos
+<img width="2000" height="3658" alt="image" src="https://github.com/user-attachments/assets/98d86775-3abe-4cc2-a286-20d158bce582" />
 
 Esta sección permite visualizar todos los proyectos registrados en el sistema.
 
