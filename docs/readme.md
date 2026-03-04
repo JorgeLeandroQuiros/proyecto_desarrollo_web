@@ -64,6 +64,7 @@ Colaboradores asignados
 Desde esta sección puede acceder rápidamente a:
 
 Crear un nuevo proyecto
+<img width="2000" height="2165" alt="image" src="https://github.com/user-attachments/assets/4128241f-f165-48b1-95f2-53078b3c696a" />
 
 Gestionar proyectos existentes
 
