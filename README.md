@@ -57,17 +57,22 @@ El proyecto consiste en el diseño y desarrollo de la interfaz web del Sistema d
 * Diseño del calendario interactivo para la solicitud visual de vacaciones.
 * Implementación de formularios visuales para registro de labores, creación de proyectos y gestión de solicitudes.
 
+### Alcance del Primer Entregable
+* Incluye los wireframes para cada una de las páginas a ser implementadas. Adicionalmente incluye documentación básica sobre el diseño y el plan del flujo de usuario para las páginas. Los documentos a entregar corresponden a:
+    * PDFs con el diseño de la página
+    * Markdown con la explicación de las páginas y el flujo a seguir.
 ---
 
 ## Estrategia para los Branches del Repositorio
 
 Para el manejo del repositorio y de los diferentes elementos se seguirá la siguiente estrategia:
-* Todo cambio al README.md o sobre la estructura general de los folders se realizará en main.
+* Todo cambio al README.md o sobre la estructura general de los folders se realizará en master.
 * Con respecto a los wireframes, se creará un branch por cada funcionalidad (Con sus respectivos wireframes). En total 3 branches:
     * Administrador
     * Usuario
     * IT
 * Para la implementación y creación del HTML, CSS y JS, se creará un branch para cada página
+    * Excepciones pueden aplicar en casos de templates o para css. Estos cambios pueden suceder en master con el fin de que se puedan utilizar en múltiples branches.
 
 ![Logo VoluntWeb](logos/voluntweb.png)  
 VoluntWeb 2026 &copy;
