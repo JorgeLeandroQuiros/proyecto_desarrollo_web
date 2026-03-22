@@ -61,6 +61,9 @@ El proyecto consiste en el diseño y desarrollo de la interfaz web del Sistema d
 * Incluye los wireframes para cada una de las páginas a ser implementadas. Adicionalmente incluye documentación básica sobre el diseño y el plan del flujo de usuario para las páginas. Los documentos a entregar corresponden a:
     * PDFs con el diseño de la página
     * Markdown con la explicación de las páginas y el flujo a seguir.
+
+### Alcance del Segundo Entregable
+* Incluye la implementación en HTML y CSS para cada uno de los wireframes propuestos durante el primer entregable. Adicionalmente incluye una página responsive para diferentes dimensiones de pantalla y dispositivos.
 ---
 
 ## Estrategia para los Branches del Repositorio
