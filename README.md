@@ -46,7 +46,13 @@ Usuarios encargados de la ejecución y el registro de datos operativos.
 Responsables del mantenimiento técnico y la estructura de datos del sistema.
 * **Catálogo de Proyectos:** Creación y mantenimiento de los proyectos de la organización, asociando metadatos como presupuesto y recursos.
 * **Gestión de Asignaciones:** Vinculación de trabajadores a los proyectos creados por el departamento de Recursos Humanos.
+---
 
+## Links para acceso rápido
+* [Aplicación (Página de Inicio)](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/pagina_principal.html)
+* [Wireframes y documentación](./docs/)
+* [Archivos HTML](./src/assets/html/)
+* [Archivos CSS](./src/assets/css/)
 ---
 
 ## Alcance del Proyecto
