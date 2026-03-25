@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikimakka - Portal Admin</title>
+    <link rel="icon" href="../img/Admin.svg" alt="Logo Administrador">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/portal_admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <span><img class="logo_cliente" src="../img/Rikkimaka.jpg" alt="Logo Rikkimaka"></span>
+            <span class="cliente">Rikimakka</span> 
+        </div>
+        <nav class="main-nav">
+            <a href="./portal_admin.html">Inicio</a> 
+            <a href="./vacaciones_admin.html">Vacaciones</a> 
+            <a href="./proyectos_admin.html">Proyectos</a> 
+            <a href="./portal_usuario.html">Mis Solicitudes</a> 
+        </nav>
+        <div class="usuario">
+            <span class="icono-usuario"> </span>
+            <span class="nombre-usuario">Andrés Barrantes</span>
+        </div>
+    </header>
+
+    <main class="content">
+        <div>
+        <h2>Administración de Vacaciones</h2>
+        
+        <div class=carta>
+            <h3>Feriados y Vacaciones</h3>
+            <div class="calendario">
+                <div class="mes-calendario">
+                    <span>Diciembre 2026</span>
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+                <div class="tabla-calendario">
+                    <div class="nombre-dia">M</div><div class="nombre-dia">T</div><div class="nombre-dia">W</div>
+                    <div class="nombre-dia">T</div><div class="nombre-dia">F</div><div class="nombre-dia">S</div><div class="nombre-dia">S</div>
+                    
+                    <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div>
+                    <div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div><div class="dia">12</div><div class="dia">13</div><div class="dia">14</div>
+                    <div class="dia">15</div><div class="dia bloqueado">16</div><div class="dia bloqueado">17</div><div class="dia bloqueado">18</div><div class="dia bloqueado">19</div><div class="dia bloqueado">20</div><div class="dia">21</div>
+                    <div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia feriado">25</div><div class="dia">26</div><div class="dia">27</div><div class="dia">28</div>
+                    <div class="dia">29</div><div class="dia">30</div><div class="dia feriado">31</div>
+                </div>
+                <div class="botones-calendario">
+                    <button class="btn btn-bloquear">Bloquear</button>
+                    <button class="btn btn-feriado">Feriado</button>
+                    <button class="btn btn-habilitar">Habilitar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cartas-solictudes">
+            <div class=carta>
+                <h3>Bloqueos y Feriados Activos</h3>
+                <div class="elemento-carta"><span>Jun 23 - Jul 5</span><a href="#" class="actualizar-calendario">Ver en Calendario</a></div>
+                <div class="elemento-carta"><span>Oct 22 - Nov 13</span><a href="#" class="actualizar-calendario">Ver en Calendario</a></div>
+                <div class="elemento-carta"><span>Dic 25</span><a href="#" class="actualizar-calendario">Ver en Calendario</a></div>
+            </div>
+
+            <div class=carta>
+                <h3>Solicitudes Pendientes (6)</h3>
+                <div class="elemento-carta"><span>John Smith</span><a href="./pagina_temporal.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
+                <div class="elemento-carta"><span>Emily Smith</span><a href="./pagina_temporal.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
+                <div class="elemento-carta"><span>Katalina Velarde</span><a href="./pagina_temporal.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
+                <div class="elemento-carta"><span>Shamel Shukoor</span><a href="./pagina_temporal.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
+                <div class="elemento-carta"><span>Michael Salgado</span><a href="./pagina_temporal.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
+                <div class="elemento-carta"><span>Andrea Hernández</span><a href="./pagina_temporal.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
+            </div>
+        </div>
+
+        <div class=carta>
+            <h3>Solicitudes Aprobadas</h3>
+            <div class="elemento-carta"><span>Mariana Chacón</span><a href="./pagina_temporal.html" class="pantalla-solicitud">Actualizar</a></div>
+            <div class="elemento-carta"><span>Sofía Astorga</span><a href="./pagina_temporal.html" class="pantalla-solicitud">Actualizar</a></div>
+            <div class="elemento-carta"><span>Adrián Mora</span><a href="./pagina_temporal.html" class="pantalla-solicitud">Actualizar</a></div>
+            <div class="elemento-central-carta">
+                <a href="./vacaciones_admin.html" class="solicitudes-admin">Ver todas las solicitudes aprobadas</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Proyectos y Personal</h2>
+        <div class=carta>
+            <h3>Proyectos</h3>
+            <div class="elemento-carta"><a href="./proyectos_admin.html" class="admin-proyecto">GlaxoSmithKline</a></div>
+            <div class="elemento-carta"><a href="./proyectos_admin.html" class="admin-proyecto">Smith & Nephew</a></div>
+            <div class="elemento-carta"><a href="./proyectos_admin.html" class="admin-proyecto">PriceWaterhouseCoopers</a></div>
+            <div class="elemento-carta"><a href="./proyectos_admin.html" class="admin-proyecto">Berkshire Hathaway</a></div>
+            <div class="elemento-carta"><a href="./proyectos_admin.html" class="admin-proyecto">Alphabet Inc</a></div>
+        </div>
+
+        <div class=carta>
+            <h3>Personal</h3>
+            <div class="elemento-carta"><a href="./pagina_temporal.html" class="admin-personal">Mariana Chacón</a></div>
+            <div class="elemento-carta"><a href="./pagina_temporal.html" class="admin-personal">Katalina Velarde</a></div>
+            <div class="elemento-carta"><a href="./pagina_temporal.html" class="admin-personal">Sofía Astorga</a></div>
+            <div class="elemento-carta"><a href="./pagina_temporal.html" class="admin-personal">Andrea Hernández</a></div>
+            <div class="elemento-carta"><a href="./pagina_temporal.html" class="admin-personal">Adrián Mora</a></div>
+        </div>
+    </div>
+    </main>
+
+<footer>
+    <div>
+        <img class="logo-voluntweb-footer" src="../img/voluntweb.png" alt="Logo VoluntWeb">
+        <p>2026 © VoluntWeb</p>
+        <p>Todos los derechos reservados</p>
+        <a href="./pagina_temporal.html" target="_blank">Términos y Condiciones</a>
+        <div class="ayuda">
+            <a href="./pagina_temporal.html" target="_blank">¿Necesitas ayuda?</a>
+        </div>
+    </div>
+
+    <div class="columna-footer footer-nav">
+        <a href="./pagina_principal.html">Inicio</a>
+        <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Producto</a>
+        <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Sobre Nosotros</a>
+        <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Contacto</a>
+        <a href="./pagina_temporal.html">Guía de Usuario</a>
+    </div>
+
+    <div class="columna-footer redes-sociales">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+</body>
+</html>
