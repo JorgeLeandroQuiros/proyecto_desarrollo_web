@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta nombre-empleado="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikimakka - Control Proyectos</title>
+    <link rel="icon" href="../img/Admin.svg" alt="Logo Administrador">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/proyectos_admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logos">
+            <span><img class="logo_cliente" src="../img/Rikkimaka.jpg" alt="Logo Rikkimaka"></span>
+            <span class="cliente">Rikimakka</span>
+        </div>
+        <nav class="main-nav">
+            <a href="./portal_admin.html">Inicio</a>
+            <a href="./vacaciones_admin.html">Vacaciones</a>
+            <a href="./proyectos_admin.html">Proyectos</a>
+            <a href="./portal_usuario.html">Mis Solicitudes</a>
+        </nav>
+        <div class="usuario">
+            <span class="icono-usuario"> </span>
+            <span class="nombre-usuario">Andrés Barrantes</span>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="dashboard-admin">
+            <h1 class="titulo-dashboard">Estadísticas y Reportes Consolidados</h1>
+            <p class="subtitulo-dashboard">Análisis completo de proyectos, carga de trabajo y productividad</p>
+        </div>
+
+        <div class="filtro-proyecto-caja">
+            <label>Filtrar por Proyecto:</label>
+            <select class="select-proyecto">
+                <option>Todos los proyectos</option>
+                <option>GlaxoSmithKline</option>
+                <option>Smith & Nephew</option>
+                <option>PriceWaterhouseCoopers</option>
+                <option>Berkshire Hathaway</option>
+                <option>Alphabet Inc.</option>
+            </select>
+        </div>
+
+        <div class="kpi-container">
+            <div class="kpi-card">
+                <p class="kpi-label">Total Horas Dedicadas</p>
+                <h2 class="kpi-valor valor-azul">879</h2>
+                <p class="kpi-info">Todas los proyectos activos</p>
+            </div>
+            <div class="kpi-card">
+                <p class="kpi-label">Eficiencia Promedio</p>
+                <h2 class="kpi-valor valor-verde">93%</h2>
+                <p class="kpi-info">Frente al presupuesto asignado</p>
+            </div>
+            <div class="kpi-card">
+                <p class="kpi-label">Personal Dedicado a Proyectos</p>
+                <h2 class="kpi-valor valor-rojo">90%</h2>
+                <p class="kpi-info">Promedio últimos 6 meses</p>
+            </div>
+        </div>
+
+        <section class="seccion-tabla">
+            <h3>Análisis de Eficiencia por Proyecto</h3>
+            <table class="tabla-eficiencia">
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Horas</th>
+                        <th>Presupuesto</th>
+                        <th>Eficiencia</th>
+                        <th>% Completado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GlaxoSmithKline</td>
+                        <td>168h</td>
+                        <td>180h</td>
+                        <td class="text-verde">93%</td>
+                        <td class="columna-iconos">
+                            <div class="progress-bar">
+                                <div class="progress azul" id="glaxo"></div>
+                            </div>
+                            <div class="label-progress">85%</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Smith & Nephew</td>
+                        <td>71h</td>
+                        <td>150h</td>
+                        <td class="text-verde">100%</td>
+                        <td class="columna-iconos">
+                            <div class="progress-bar">
+                                <div class="progress verde" id="smith"></div>
+                            </div>
+                            <div class="label-progress">100%</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PriceWaterhouseCoopers</td>
+                        <td>189h</td>
+                        <td>200h</td>
+                        <td class="text-verde">94%</td>
+                        <td class="columna-iconos">
+                            <div class="progress-bar">
+                                <div class="progress azul" id="price"></div>
+                            </div>
+                            <div class="label-progress">75%</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Berkshire Hathaway</td>
+                        <td>224h</td>
+                        <td>210h</td>
+                        <td class="text-rojo">20%</td>
+                        <td class="columna-iconos">
+                            <div class="progress-bar">
+                                <div class="progress naranja" id="berkshire"></div>
+                            </div>
+                            <div class="label-progress">60%</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Alphabet Inc</td>
+                        <td>156h</td>
+                        <td>180h</td>
+                        <td class="text-naranja">35%</td>
+                        <td class="columna-iconos">
+                            <div class="progress-bar">
+                                <div class="progress rojo" id="alphabet"></div>
+                            </div>
+                            <div class="label-progress">45%</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="pantalla-proyectos-admin-graficos">
+            <div class="chart-card">
+                <h3>Horas Dedicadas al Proyecto</h3>
+                <img src="../img/BarChart.png" alt="Gráfico de barras de horas por empleado">
+            </div>
+            <div class="chart-card">
+                <h3>Estado de Proyectos</h3>
+                <img src="../img/PieChart.png" alt="Gráfico de pastel de estado de proyectos">
+            </div>
+        </div>
+
+        <div class="chart-card full-width">
+            <h3>Porcentaje de Utilización de Horas y Productividad</h3>
+            <img src="../img/LineChart.png" alt="Gráfico de líneas de productividad">
+        </div>
+    </main>
+
+
+    <footer>
+        <div>
+            <img class="logo-voluntweb-footer" src="../img/voluntweb.png" alt="Logo VoluntWeb">
+            <p>2026 © VoluntWeb</p>
+            <p>Todos los derechos reservados</p>
+            <a href="./pagina_temporal.html" target="_blank">Términos y Condiciones</a>
+            <div class="ayuda">
+                <a href="./pagina_temporal.html" target="_blank">¿Necesitas ayuda?</a>
+            </div>
+        </div>
+
+        <div class="columna-footer footer-nav">
+            <a href="./pagina_principal.html">Inicio</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Producto</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Sobre Nosotros</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Contacto</a>
+            <a href="./pagina_temporal.html">Guía de Usuario</a>
+        </div>
+
+        <div class="columna-footer redes-sociales">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="http://www.x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
