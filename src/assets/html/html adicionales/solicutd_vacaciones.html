@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/solicitud_vacaciones.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Rikkimaka - Solicitud de Vacaciones</title>
+</head>
+<body>
+<div class="pantalla-aprobacion">
+    <div class="carta-vacaciones">
+        <div class="carta-vacaciones-superior">
+            <h2 class="carta-vacaciones-titulo">Solicitud de Vacaciones</h2>
+            <button class="cerrar-pantalla-aprobacion"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="carta-vacaciones-contenido">
+            <div class="detalles-solicitud">
+                <div class="info-usuario-caja">
+                    <h3 class="usuario-nombre">Katalina Velarde</h3>
+                    <hr class="separador">
+                    <p>Fecha de Inicio: 14-01-2027</p>
+                    <p>Fecha Final: 21-01-2027</p>
+                    <p>Días disponibles: 9</p>
+                </div>
+
+                <div class="comentarios-seccion">
+                    <h4>Agregar Comentarios</h4>
+                    <textarea class="input-comentarios" placeholder="Agregar comentario..."></textarea>
+                </div>
+            </div>
+
+            <div class="calendario-columna">
+                <div class="calendario">
+                    <div class="mes-calendario">
+                        <span>Enero 2027</span>
+                        <i class="fa-regular fa-calendar"></i>
+                    </div>
+                    <div class="tabla-calendario">
+                        <div class="nombre-dia">M</div><div class="nombre-dia">T</div><div class="nombre-dia">W</div>
+                        <div class="nombre-dia">T</div><div class="nombre-dia">F</div><div class="nombre-dia">S</div><div class="nombre-dia">S</div>
+                        
+                        <div class="dia"></div><div class="dia"></div><div class="dia"></div><div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div>
+                        <div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div>
+                        <div class="dia">12</div><div class="dia">13</div><div class="dia bloqueado">14</div><div class="dia bloqueado">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia bloqueado">18</div>
+                        <div class="dia bloqueado">19</div><div class="dia bloqueado">20</div><div class="dia bloqueado">21</div><div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia">25</div>
+                        <div class="dia">26</div><div class="dia">27</div><div class="dia">28</div><div class="dia">29</div><div class="dia">30</div><div class="dia">31</div>
+                    </div>
+                </div>
+                <p class="conteo-dias">6 días solicitados</p>
+            </div>
+        </div>
+
+        <div class="btn-admin-vacaciones">
+            <button class="btn btn-feriado">Aprobar</button>
+            <button class="btn btn-bloquear">Denegar</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

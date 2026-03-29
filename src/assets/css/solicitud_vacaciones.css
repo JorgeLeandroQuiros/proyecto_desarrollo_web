@@ -1,0 +1,121 @@
+.pantalla-aprobacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.carta-vacaciones {
+    background-color: white;
+    width: 800px;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.carta-vacaciones-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.carta-vacaciones-titulo {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.cerrar-pantalla-aprobacion {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.carta-vacaciones-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.info-usuario-caja {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.usuario-nombre {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.separador {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
+.info-usuario-caja p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.comentarios-seccion h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.input-comentarios {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    resize: none;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.calendario-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendario-columna .calendario {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.conteo-dias {
+    margin-top: 15px;
+    color: #666;
+    font-weight: 500;
+}
+
+.btn-admin-vacaciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-admin-vacaciones .btn {
+    padding: 12px 50px;
+    font-size: 1rem;
+}
