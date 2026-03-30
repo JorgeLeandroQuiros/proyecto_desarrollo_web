@@ -50,6 +50,7 @@ Responsables del mantenimiento técnico y la estructura de datos del sistema.
 
 ## Links para acceso rápido
 * [Aplicación (Página de Inicio)](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/pagina_principal.html)
+    * **Página Responsive**: Corresponde a la [página principal](./src/assets/html/pagina_principal.html), la página tiene 3 diferentes respuestas a cambios de dimensiones: Menos de 300px, de 301px a 480px y más de 481px.
 * [Wireframes y documentación](./docs/)
 * [Archivos HTML](./src/assets/html/)
 * [Archivos CSS](./src/assets/css/)
@@ -70,7 +71,6 @@ El proyecto consiste en el diseño y desarrollo de la interfaz web del Sistema d
 
 ### Alcance del Segundo Entregable
 * Incluye la implementación en HTML y CSS para cada uno de los wireframes propuestos durante el primer entregable. Adicionalmente incluye una página responsive para diferentes dimensiones de pantalla y dispositivos.
----
 
 ## Estrategia para los Branches del Repositorio
 
