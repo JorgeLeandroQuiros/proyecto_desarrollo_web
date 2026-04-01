@@ -70,7 +70,16 @@ El proyecto consiste en el diseño y desarrollo de la interfaz web del Sistema d
     * Markdown con la explicación de las páginas y el flujo a seguir.
 
 ### Alcance del Segundo Entregable
-* Incluye la implementación en HTML y CSS para cada uno de los wireframes propuestos durante el primer entregable. Adicionalmente incluye una página responsive para diferentes dimensiones de pantalla y dispositivos.
+* Incluye la implementación en HTML y CSS para cada uno de los wireframes propuestos durante el primer entregable. Adicionalmente incluye una página responsive para diferentes dimensiones de pantalla y dispositivos. Las siguientes páginas fueron implementadas para el entregable:
+    * [Página Principal](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/pagina_principal.html)
+        * [Portal Administrador](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/portal_admin.html)
+            * [Gestion Vacaciones](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/vacaciones_admin.html)
+            * [Gestion Proyectos](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/proyectos_admin.html)
+        * [Portal IT](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/portal_it.html)
+            * [Nuevo Proyecto](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/nuevo_proyecto.html)
+        * [Portal Usuario](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/portal_usuario.html)
+* Adicionalmente para las páginas de Gestion Vacaciones y Portal Administrador, en la página web sucede un overlay. Para que suceda este es necesario utilizar javascript. Para este entregable los links redireccionan a [Overlay Vacaciones](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/solicutd_vacaciones_overlay_vacaciones.html) y [Overlay Admin](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/solicutd_vacaciones_overlay_admin.html). Estas páginas muestran el funcionamiento esperado después.
+* Cualquier funcionalidad no implementada o en desarrollo redirige a [En Construcción](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/pagina_temporal.html)
 
 ## Estrategia para los Branches del Repositorio
 
