@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikimakka - Crear Nuevo Proyecto</title>
+    <link rel="icon" href="../img/IT.svg" alt="Logo IT">
+    <link rel="stylesheet" href="../css/base.css"> 
+    <link rel="stylesheet" href="../css/nuevo_proyecto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <span><img class="logo_cliente" src="../img/Rikkimaka.jpg" alt="Logo Rikkimaka"></span>
+            <span class="cliente">Rikimakka</span> 
+        </div>
+        <nav class="main-nav">
+            <a href="./portal_it.html">Inicio</a> 
+            <a href="./pagina_temporal.html">Colaboradores</a> 
+            <a href="./pagina_temporal.html">Proyectos</a> 
+            <a href="./nuevo_proyecto.html" class="active">Nuevo Proyecto</a> 
+        </nav>
+        <div class="usuario">
+            <span class="icono-usuario"></span>
+            <span class="nombre-usuario">Carlos Martínez</span>
+        </div>
+    </header>
+
+    <main class="contenedor-principal">
+        <h1 class="titulo-pagina">Crear Nuevo Proyecto</h1>
+
+        <section class="contenedor-formulario">
+            <form action="#" method="post">
+                <div class="grid-formulario">
+                    <div class="grupo-input">
+                        <label for="nombre_proyecto">
+                            <i class="fas fa-folder icon-blue"></i> Nombre del Proyecto
+                        </label>
+                        <input type="text" id="nombre_proyecto" name="nombre_proyecto" placeholder="Ej: Desarrollo de Plataforma Web">
+                    </div>
+                    <div class="grupo-input">
+                        <label for="presupuesto">
+                            <i class="fas fa-dollar-sign icon-green"></i> Presupuesto
+                        </label>
+                        <input type="text" id="presupuesto" name="presupuesto" placeholder="Ej: $50,000">
+                    </div>
+
+                    <div class="grupo-input">
+                        <label for="recursos">
+                            <i class="fas fa-users icon-purple"></i> Recursos Asignados
+                        </label>
+                        <input type="text" id="recursos" name="recursos" placeholder="Ej: 5 desarrolladores, 2 diseñadores">
+                    </div>
+                    <div class="grupo-input">
+                        <label for="fecha_inicio">
+                            <i class="far fa-calendar-alt icon-blue"></i> Fecha de Inicio
+                        </label>
+                        <input type="date" id="fecha_inicio" name="fecha_inicio">
+                    </div>
+
+                    <div class="grupo-input">
+                        <label for="fecha_fin">
+                            <i class="far fa-calendar-check icon-orange"></i> Fecha de Finalización
+                        </label>
+                        <input type="date" id="fecha_fin" name="fecha_fin">
+                    </div>
+                    <div></div> <div class="grupo-input ancho-completo">
+                        <label for="descripcion">
+                            <i class="fas fa-file-alt icon-gray"></i> Descripción
+                        </label>
+                        <textarea id="descripcion" name="descripcion" rows="6" placeholder="Describa los objetivos, alcance y detalles relevantes del proyecto..."></textarea>
+                    </div>
+                </div>
+
+                <div class="barra-botones">
+                    <button type="button" class="btn-secundario">Cancelar</button>
+                    <button type="submit" class="btn-primario">Guardar Proyecto</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img class="logo-voluntweb-footer" src="../img/voluntweb.png" alt="Logo VoluntWeb">
+            <p>2026 © VoluntWeb</p>
+            <p>Todos los derechos reservados</p>
+            <a href="./pagina_temporal.html" target="_blank">Términos y Condiciones</a>
+            <div class="ayuda">
+                <a href="./pagina_temporal.html" target="_blank">¿Necesitas ayuda?</a>
+            </div>
+        </div>
+
+        <div class="columna-footer footer-nav">
+            <a href="./pagina_principal.html">Inicio</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Producto</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Sobre Nosotros</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Contacto</a>
+            <a href="./pagina_temporal.html">Guía de Usuario</a>
+        </div>
+
+        <div class="columna-footer redes-sociales">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="http://www.x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
