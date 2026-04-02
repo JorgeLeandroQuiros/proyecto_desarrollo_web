@@ -77,8 +77,11 @@ El proyecto consiste en el diseño y desarrollo de la interfaz web del Sistema d
             * [Gestion Proyectos](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/proyectos_admin.html)
         * [Portal IT](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/portal_it.html)
             * [Nuevo Proyecto](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/nuevo_proyecto.html)
+            * [Gestion Colaboradores](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/colaboradores.html)
+            * [Gestion Proyectos](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/proyectos_it.html)
         * [Portal Usuario](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/portal_usuario.html)
-* Adicionalmente para las páginas de Gestion Vacaciones y Portal Administrador, en la página web sucede un overlay. Para que suceda este es necesario utilizar javascript. Para este entregable los links redireccionan a [Overlay Vacaciones](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/solicutd_vacaciones_overlay_vacaciones.html) y [Overlay Admin](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/solicutd_vacaciones_overlay_admin.html). Estas páginas muestran el funcionamiento esperado después.
+* Adicionalmente para las páginas de Gestion Vacaciones y Portal Administrador, en la página web sucede un overlay. Para que suceda este es necesario utilizar javascript. Para este entregable los links redireccionan a [Overlay Vacaciones](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/solicutd_vacaciones_overlay_vacaciones.html) y [Overlay Admin](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/solicutd_vacaciones_overlay_admin.html). Estas páginas muestran el funcionamiento esperado después que el usuario utilice el link para revisar la solicitud.
+    * **Nota:** Para regresar es necesario utilizar la flecha de retroceder en el navegador. La implementación de el cierre de la ventana emergente se debe de realizar utilizando Javascript.
 * Cualquier funcionalidad no implementada o en desarrollo redirige a [En Construcción](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/pagina_temporal.html)
 
 ## Estrategia para los Branches del Repositorio
