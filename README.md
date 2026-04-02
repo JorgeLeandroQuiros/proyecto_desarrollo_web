@@ -54,6 +54,7 @@ Responsables del mantenimiento técnico y la estructura de datos del sistema.
 * [Wireframes y documentación](./docs/)
 * [Archivos HTML](./src/assets/html/)
 * [Archivos CSS](./src/assets/css/)
+
 ---
 
 ## Alcance del Proyecto
