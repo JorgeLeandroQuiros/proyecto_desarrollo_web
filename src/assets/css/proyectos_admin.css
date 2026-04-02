@@ -11,7 +11,6 @@ body {
 .content {
     padding: 40px;
     background-color: #f8f9fa;
-    font-family: 'Segoe UI', sans-serif;
 }
 
 .dashboard-admin { margin-bottom: 30px; text-align: center; }

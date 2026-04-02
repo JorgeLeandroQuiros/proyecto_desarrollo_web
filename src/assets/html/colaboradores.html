@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikimakka - Control Colaboradores</title>
+    <link rel="icon" href="../img/IT.svg" alt="Logo IT">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/colaboradores.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logos">
+            <span><img class="logo_cliente" src="../img/Rikkimaka.jpg" alt="Logo Rikkimaka"></span>
+            <span class="cliente">Rikimakka</span>
+        </div>
+        <nav class="main-nav">
+            <a href="./portal_it.html">Inicio</a>
+            <a href="./colaboradores.html">Colaboradores</a>
+            <a href="./proyectos_it.html">Proyectos</a>
+            <a href="./nuevo_proyecto.html">Nuevo Proyecto</a>
+        </nav>
+        <div class="usuario">
+            <span class="icono-usuario"> </span>
+            <span class="nombre-usuario">Carlos Martínez</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="principal">
+            <div class="lista-asignaciones">
+                <div>
+                    <h1>Nueva Asignación</h1>
+                    <p class="indicaciones">Selecciona un proyecto y los colaboradores que deseas asignar</p>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="proyecto-select" class="etiqueta">Proyecto</label>
+                        <div class="dropdown">
+                            <select id="proyecto-select" class="custom-select" name="proyecto">
+                                <option value="" disabled selected>Selecciona un proyecto</option>
+                                <option value="pfizer">Pfizer</option>
+                                <option value="banco_costa_rica">Banco de Costa Rica</option>
+                                <option value="bank_of_america">Bank of America</option>
+                                <option value="air_france">Air France</option>
+                                <option value="meta">Meta</option>
+                                <option value="alphabet_inc">Alphabet Inc</option>
+                                <option value="ikea">IKEA</option>
+                                <option value="ferrari">Ferrari</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down select-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="colaboradores">
+                        <label class="etiqueta">Colaboradores</label>
+                        <div class="tabla-colaboradores">
+
+                            <div class="colaborador">
+                                <input type="checkbox" class="colab-checkbox" name="colaboradores[]"
+                                    value="mariana_chacon">
+                                <div class="iniciales">MC</div>
+                                <div class="info-colaborador">
+                                    <p class="nombre">Mariana Chacón</p>
+                                    <p class="especialidad">Desarrolladora Frontend</p>
+                                </div>
+                            </div>
+
+                            <div class="colaborador">
+                                <input type="checkbox" class="colab-checkbox" name="colaboradores[]"
+                                    value="carlos_ruiz">
+                                <div class="iniciales">CR</div>
+                                <div class="info-colaborador">
+                                    <p class="nombre">Carlos Ruiz</p>
+                                    <p class="especialidad">Desarrollador Backend</p>
+                                </div>
+                            </div>
+
+                            <div class="colaborador">
+                                <input type="checkbox" class="colab-checkbox" name="colaboradores[]"
+                                    value="ana_martinez">
+                                <div class="iniciales">AM</div>
+                                <div class="info-colaborador">
+                                    <p class="nombre">Ana Martínez</p>
+                                    <p class="especialidad">Diseñadora UX/UI</p>
+                                </div>
+                            </div>
+
+                            <div class="colaborador">
+                                <input type="checkbox" class="colab-checkbox" name="colaboradores[]"
+                                    value="luis_hernandez">
+                                <div class="iniciales">LH</div>
+                                <div class="info-colaborador">
+                                    <p class="nombre">Luis Hernández</p>
+                                    <p class="especialidad">DevOps Engineer</p>
+                                </div>
+                            </div>
+
+                            <div class="colaborador">
+                                <input type="checkbox" class="colab-checkbox" name="colaboradores[]"
+                                    value="sofia_torres">
+                                <div class="iniciales">ST</div>
+                                <div class="info-colaborador">
+                                    <p class="nombre">Sofia Torres</p>
+                                    <p class="especialidad">QA Tester</p>
+                                </div>
+                            </div>
+
+                            <div class="colaborador">
+                                <input type="checkbox" class="colab-checkbox" name="colaboradores[]"
+                                    value="katalina_velarde">
+                                <div class="iniciales">KV</div>
+                                <div class="info-colaborador">
+                                    <p class="nombre">Katalina Velarde</p>
+                                    <p class="especialidad">Product Manager</p>
+                                </div>
+                            </div>
+
+                            <div class="colaborador">
+                                <input type="checkbox" class="colab-checkbox" name="colaboradores[]"
+                                    value="carmen_diaz">
+                                <div class="iniciales">CD</div>
+                                <div class="info-colaborador">
+                                    <p class="nombre">Carmen Díaz</p>
+                                    <p class="especialidad">Desarrolladora Full Stack</p>
+                                </div>
+                            </div>
+
+                            <div class="colaborador">
+                                <input type="checkbox" class="colab-checkbox" name="colaboradores[]"
+                                    value="roberto_sanchez">
+                                <div class="iniciales">RS</div>
+                                <div class="info-colaborador">
+                                    <p class="nombre">Roberto Sánchez</p>
+                                    <p class="especialidad">Arquitecto de Software</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="accion-principal">
+                        <button type="submit" class="btn-assign">
+                            <i class="fa-solid fa-user-plus"></i> Asignar Colaboradores
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img class="logo-voluntweb-footer" src="../img/voluntweb.png" alt="Logo VoluntWeb">
+            <p>2026 © VoluntWeb</p>
+            <p>Todos los derechos reservados</p>
+            <a href="./pagina_temporal.html" target="_blank">Términos y Condiciones</a>
+            <div class="ayuda">
+                <a href="./pagina_temporal.html" target="_blank">¿Necesitas ayuda?</a>
+            </div>
+        </div>
+
+        <div class="columna-footer footer-nav">
+            <a href="./pagina_principal.html">Inicio</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Producto</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Sobre Nosotros</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Contacto</a>
+            <a href="./pagina_temporal.html">Guía de Usuario</a>
+        </div>
+
+        <div class="columna-footer redes-sociales">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="http://www.x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6e5e3;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 80%;
+    padding: 60px 20px;
+    flex: 1;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px); 
+}
+
+.lista-asignaciones {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 900px;
+}
+
+.lista-asignaciones h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.indicaciones {
+  color: #64748b;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
+}
+
+.dropdown {
+  margin-bottom: 2rem;
+}
+
+.etiqueta {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: #475569;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.custom-select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  background-color: white;
+  font-size: 0.9rem;
+  appearance: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.select-icon {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
+.colaboradores {
+  margin-bottom: 2rem;
+}
+
+.tabla-colaboradores {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+.colaborador {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  gap: 1.25rem;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.colaborador:hover {
+  background-color: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.colab-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #8eaeff;
+}
+
+.iniciales {
+  width: 48px;
+  height: 48px;
+  background-color: #f1f5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #64748b;
+  font-size: 1.1rem;
+  border: 1px solid #e2e8f0;
+  user-select: none; 
+}
+
+.info-colaborador {
+  flex-grow: 1;
+}
+
+.info-colaborador .nombre {
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.info-colaborador .especialidad {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0;
+  margin-top: 0.2rem;
+}
+
+.accion-principal {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
+.btn-assign {
+  background-color: #8eaeff;
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.btn-assign:hover {
+  background-color: #7a9df0;
+}
+
+.btn-assign:active {
+  transform: translateY(1px);
+}
