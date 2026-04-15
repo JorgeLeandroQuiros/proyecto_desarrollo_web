@@ -1,3 +1,7 @@
+.modal-overlay {
+    display: none;
+}
+
 .pantalla-aprobacion {
     position: fixed;
     top: 0;

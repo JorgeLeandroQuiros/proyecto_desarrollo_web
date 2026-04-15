@@ -265,3 +265,9 @@ footer {
     opacity: 0.5;
     transform: translateY(2px);
 }
+
+.dia.seleccionado {
+    outline: 2px solid #5036e4;
+    background-color: rgba(80, 54, 228, 0.3);
+    transform: scale(1.1);
+}
