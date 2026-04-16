@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const dias = document.querySelectorAll(".dia");
-    const btnBloquear = document.querySelector(".btn-bloquear");
-    const btnFeriado = document.querySelector(".btn-feriado");
-    const btnHabilitar = document.querySelector(".btn-habilitar");
+    let dias = document.querySelectorAll(".dia");
+    let btnBloquear = document.querySelector(".btn-bloquear");
+    let btnFeriado = document.querySelector(".btn-feriado");
+    let btnHabilitar = document.querySelector(".btn-habilitar");
 
     dias.forEach(day => {
         day.addEventListener("click", () => {
@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    const actualizarStatus = (claseStatus) => {
-        const seleccionados = document.querySelectorAll(".dia.seleccionado");
+    let actualizarStatus = (claseStatus) => {
+        let seleccionados = document.querySelectorAll(".dia.seleccionado");
 
         if (seleccionados.length === 0) {
             alert("Por favor, seleccione al menos un día");
@@ -33,23 +33,134 @@ document.addEventListener("DOMContentLoaded", () => {
     btnFeriado.addEventListener("click", () => actualizarStatus("feriado"));
     btnHabilitar.addEventListener("click", () => actualizarStatus(null));
 
+const solicitudesVacaciones = [
+        { id: 1, nombre: "John Smith", inicioVacaciones: "10-03-2026", finalVacaciones: "17-03-2026", diasDisponibles: 15, diasSolicitados: 5 },
+        { id: 2, nombre: "Emily Smith", inicioVacaciones: "05-04-2026", finalVacaciones: "12-04-2026", diasDisponibles: 12, diasSolicitados: 5 },
+        { id: 3, nombre: "Katalina Velarde", inicioVacaciones: "14-01-2027", finalVacaciones: "21-01-2027", diasDisponibles: 9, diasSolicitados: 6 },
+        { id: 4, nombre: "Shamel Shukoor", inicioVacaciones: "15-06-2026", finalVacaciones: "30-06-2026", diasDisponibles: 20, diasSolicitados: 11 },
+        { id: 5, nombre: "Michael Salgado", inicioVacaciones: "20-02-2026", finalVacaciones: "27-02-2026", diasDisponibles: 7, diasSolicitados: 5 },
+        { id: 6, nombre: "Andrea Hernández", inicioVacaciones: "01-05-2026", finalVacaciones: "10-05-2026", diasDisponibles: 14, diasSolicitados: 7 },
+        { id: 7, nombre: "Mariana Chacón", inicioVacaciones: "15-03-2026", finalVacaciones: "20-03-2026", diasDisponibles: 10, diasSolicitados: 5 },
+        { id: 8, nombre: "Sofía Astorga", inicioVacaciones: "10-02-2026", finalVacaciones: "15-02-2026", diasDisponibles: 8, diasSolicitados: 5 },
+        { id: 9, nombre: "Adrián Mora", inicioVacaciones: "01-04-2026", finalVacaciones: "08-04-2026", diasDisponibles: 11, diasSolicitados: 6 }
+    ];
+
     const modal = document.querySelector(".modal-overlay");
     const btnCerrar = document.querySelector(".cerrar-pantalla-aprobacion");
-    const linksRevisar = document.querySelectorAll(".pantalla-solicitud");
+    const btnAprobar = document.querySelector(".btn-admin-vacaciones .btn-feriado");
+    const btnDenegar = document.querySelector(".btn-admin-vacaciones .btn-bloquear");
+    const contenedorAprobadas = document.querySelector(".content > div:nth-child(1) > .carta:last-of-type");
+    const linkVerTodas = document.querySelector(".solicitudes-admin")?.parentElement;
 
-    linksRevisar.forEach(link => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            
+    const modalNombre = document.querySelector(".usuario-nombre");
+    const modalInicio = document.querySelector(".info-usuario-caja p:nth-of-type(1)");
+    const modalFinal = document.querySelector(".info-usuario-caja p:nth-of-type(2)");
+    const modalDisponibles = document.querySelector(".info-usuario-caja p:nth-of-type(3)");
+    const modalConteo = document.querySelector(".conteo-dias");
+    const contenedorCalendario = document.querySelector(".calendario-columna .tabla-calendario");
+    const tituloCalendario = document.querySelector(".calendario-columna .mes-calendario span");
+
+    let solicitudActualId = null;
+
+    const actualizarContadorPendientes = () => {
+        const listaPendientes = document.querySelector(".cartas-solictudes .carta:nth-child(2)");
+        const cantidad = listaPendientes.querySelectorAll(".elemento-carta").length;
+        const titulo = document.querySelector(".cartas-solictudes .carta:nth-child(2) h3");
+        if (titulo) titulo.textContent = `Solicitudes Pendientes (${cantidad})`;
+    };
+
+    const generarCalendarioModal = (fechaInicioStr, fechaFinalStr) => {
+        const diasSemana = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+        contenedorCalendario.innerHTML = diasSemana.map(d => `<div class="nombre-dia">${d}</div>`).join('');
+
+        const [diaI, mesI, anioI] = fechaInicioStr.split('-').map(Number);
+        const [diaF, mesF, anioF] = fechaFinalStr.split('-').map(Number);
+        
+        const fechaObjeto = new Date(anioI, mesI - 1, 1);
+        tituloCalendario.textContent = fechaObjeto.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
+
+        const primerDiaSemana = new Date(anioI, mesI - 1, 1).getDay();
+        const ajusteDia = primerDiaSemana === 0 ? 6 : primerDiaSemana - 1;
+        const ultimoDiaMes = new Date(anioI, mesI, 0).getDate();
+
+        for (let i = 0; i < ajusteDia; i++) {
+            const vacio = document.createElement("div");
+            vacio.className = "dia";
+            contenedorCalendario.appendChild(vacio);
+        }
+
+        for (let i = 1; i <= ultimoDiaMes; i++) {
+            const diaDiv = document.createElement("div");
+            diaDiv.className = "dia";
+            diaDiv.textContent = i;
+            const fechaActual = new Date(anioI, mesI - 1, i);
+            const esFinDeSemana = (fechaActual.getDay() === 0 || fechaActual.getDay() === 6);
+
+            if (i >= diaI && i <= diaF && !esFinDeSemana) {
+                diaDiv.classList.add("bloqueado");
+            }
+            contenedorCalendario.appendChild(diaDiv);
+        }
+    };
+
+    const abrirModalSolicitud = (e) => {
+        e.preventDefault();
+        const link = e.currentTarget;
+        const idSolicitud = parseInt(link.id.replace("solicitud-", ""));
+        const datos = solicitudesVacaciones.find(s => s.id === idSolicitud);
+
+        if (datos) {
+            solicitudActualId = idSolicitud;
+            modalNombre.textContent = datos.nombre;
+            modalInicio.textContent = `Fecha de Inicio: ${datos.inicioVacaciones}`;
+            modalFinal.textContent = `Fecha Final: ${datos.finalVacaciones}`;
+            modalDisponibles.textContent = `Días disponibles: ${datos.diasDisponibles}`;
+            modalConteo.textContent = `${datos.diasSolicitados} días solicitados`;
+
+            generarCalendarioModal(datos.inicioVacaciones, datos.finalVacaciones);
             modal.style.display = "block";
-            
-        });
+        }
+    };
+
+    document.querySelectorAll(".pantalla-solicitud").forEach(link => {
+        link.addEventListener("click", abrirModalSolicitud);
     });
 
-    if (btnCerrar) {
-        btnCerrar.addEventListener("click", () => {
-            modal.style.display = "none";
-        });
-    }
-});
+    btnAprobar.addEventListener("click", () => {
+        if (!solicitudActualId) return;
+        const fila = document.getElementById(`fila-solicitud-${solicitudActualId}`);
+        
+        if (fila) {
+            const link = fila.querySelector(".pantalla-solicitud");
+            if (link) link.textContent = "Actualizar";
 
+            if (fila.parentElement.closest('.cartas-solictudes')) {
+                if (linkVerTodas) {
+                    contenedorAprobadas.insertBefore(fila, linkVerTodas);
+                } else {
+                    contenedorAprobadas.appendChild(fila);
+                }
+                actualizarContadorPendientes();
+            }
+        }
+        cerrarModal();
+    });
+
+    btnDenegar.addEventListener("click", () => {
+        if (!solicitudActualId) return;
+        const fila = document.getElementById(`fila-solicitud-${solicitudActualId}`);
+        if (fila) {
+            const eraPendiente = fila.parentElement.closest('.cartas-solictudes');
+            fila.remove();
+            if (eraPendiente) actualizarContadorPendientes();
+        }
+        cerrarModal();
+    });
+
+    const cerrarModal = () => {
+        modal.style.display = "none";
+        solicitudActualId = null;
+    };
+
+    if (btnCerrar) btnCerrar.addEventListener("click", cerrarModal);
+});
