@@ -271,3 +271,7 @@ footer {
     background-color: rgba(80, 54, 228, 0.3);
     transform: scale(1.1);
 }
+
+.hidden {
+    display: none;
+}
