@@ -7,19 +7,21 @@
     <link rel="icon" href="../img/Admin.svg" alt="Logo Administrador">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/portal_admin.css">
+    <link rel="stylesheet" href="../css/solicitud_vacaciones.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../../scripts/portal_admin.js"></script>
 </head>
-<body>
+<body class="modal-open">
     <header>
         <div class="logos">
             <span><img class="logo_cliente" src="../img/Rikkimaka.jpg" alt="Logo Rikkimaka"></span>
-            <span class="cliente">Rikimakka</span> 
+            <span class="cliente">Rikimakka</span>
         </div>
         <nav class="main-nav">
-            <a href="./portal_admin.html">Inicio</a> 
-            <a href="./vacaciones_admin.html">Vacaciones</a> 
-            <a href="./proyectos_admin.html">Proyectos</a> 
-            <a href="./portal_usuario.html">Mis Solicitudes</a> 
+            <a href="./portal_admin.html">Inicio</a>
+            <a href="./vacaciones_admin.html">Vacaciones</a>
+            <a href="./proyectos_admin.html">Proyectos</a>
+            <a href="./portal_usuario.html">Mis Solicitudes</a>
         </nav>
         <div class="usuario">
             <span class="icono-usuario"> </span>
@@ -65,21 +67,21 @@
             </div>
 
             <div class=carta>
-                <h3>Solicitudes Pendientes (6)</h3>
-                <div class="elemento-carta"><span>John Smith</span><a href="./solicutd_vacaciones_overlay_admin.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
-                <div class="elemento-carta"><span>Emily Smith</span><a href="./solicutd_vacaciones_overlay_admin.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
-                <div class="elemento-carta"><span>Katalina Velarde</span><a href="./solicutd_vacaciones_overlay_admin.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
-                <div class="elemento-carta"><span>Shamel Shukoor</span><a href="./solicutd_vacaciones_overlay_admin.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
-                <div class="elemento-carta"><span>Michael Salgado</span><a href="./solicutd_vacaciones_overlay_admin.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
-                <div class="elemento-carta"><span>Andrea Hernández</span><a href="./solicutd_vacaciones_overlay_admin.html" class="pantalla-solicitud">Revisar Solicitud</a></div>
+                <h3 id="contador-pendientes-titulo">Solicitudes Pendientes (6)</h3>
+                <div class="elemento-carta" id="fila-solicitud-1"><span>John Smith</span><a href="./pagina_temporal.html" class="pantalla-solicitud" id="solicitud-1">Revisar Solicitud</a></div>
+                <div class="elemento-carta" id="fila-solicitud-2"><span>Emily Smith</span><a href="./pagina_temporal.html" class="pantalla-solicitud" id="solicitud-2">Revisar Solicitud</a></div>
+                <div class="elemento-carta" id="fila-solicitud-3"><span>Katalina Velarde</span><a href="./pagina_temporal.html" class="pantalla-solicitud" id="solicitud-3">Revisar Solicitud</a></div>
+                <div class="elemento-carta" id="fila-solicitud-4"><span>Shamel Shukoor</span><a href="./pagina_temporal.html" class="pantalla-solicitud" id="solicitud-4">Revisar Solicitud</a></div>
+                <div class="elemento-carta" id="fila-solicitud-5"><span>Michael Salgado</span><a href="./pagina_temporal.html" class="pantalla-solicitud" id="solicitud-5">Revisar Solicitud</a></div>
+                <div class="elemento-carta" id="fila-solicitud-6"><span>Andrea Hernández</span><a href="./pagina_temporal.html" class="pantalla-solicitud" id="solicitud-6">Revisar Solicitud</a></div>
             </div>
         </div>
 
         <div class=carta>
             <h3>Solicitudes Aprobadas</h3>
-            <div class="elemento-carta"><span>Mariana Chacón</span><a href="./solicutd_vacaciones_overlay_admin.html" class="pantalla-solicitud">Actualizar</a></div>
-            <div class="elemento-carta"><span>Sofía Astorga</span><a href="./solicutd_vacaciones_overlay_admin.html" class="pantalla-solicitud">Actualizar</a></div>
-            <div class="elemento-carta"><span>Adrián Mora</span><a href="./solicutd_vacaciones_overlay_admin.html" class="pantalla-solicitud">Actualizar</a></div>
+            <div class="elemento-carta" id="fila-solicitud-7"><span>Mariana Chacón</span><a href="./pagina_temporal.html" class="pantalla-solicitud" id="solicitud-7">Actualizar</a></div>
+            <div class="elemento-carta" id="fila-solicitud-8"><span>Sofía Astorga</span><a href="./pagina_temporal.html" class="pantalla-solicitud" id="solicitud-8">Actualizar</a></div>
+            <div class="elemento-carta" id="fila-solicitud-9"><span>Adrián Mora</span><a href="./pagina_temporal.html" class="pantalla-solicitud" id="solicitud-9">Actualizar</a></div>
             <div class="elemento-central-carta">
                 <a href="./vacaciones_admin.html" class="solicitudes-admin">Ver todas las solicitudes aprobadas</a>
             </div>
@@ -108,31 +110,81 @@
     </div>
     </main>
 
-<footer>
-    <div>
-        <img class="logo-voluntweb-footer" src="../img/voluntweb.png" alt="Logo VoluntWeb">
-        <p>2026 © VoluntWeb</p>
-        <p>Todos los derechos reservados</p>
-        <a href="./pagina_temporal.html" target="_blank">Términos y Condiciones</a>
-        <div class="ayuda">
-            <a href="./pagina_temporal.html" target="_blank">¿Necesitas ayuda?</a>
+    <div class="modal-overlay">
+        <div class="pantalla-aprobacion">
+            <div class="carta-vacaciones">
+                <div class="carta-vacaciones-superior">
+                    <h2 class="carta-vacaciones-titulo">Solicitud de Vacaciones</h2>
+                    <button class="cerrar-pantalla-aprobacion"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <div class="carta-vacaciones-contenido">
+                    <div class="detalles-solicitud">
+                        <div class="info-usuario-caja">
+                            <h3 class="usuario-nombre">Katalina Velarde</h3>
+                            <hr class="separador">
+                            <p>Fecha de Inicio: 14-01-2027</p>
+                            <p>Fecha Final: 21-01-2027</p>
+                            <p>Días disponibles: 9</p>
+                        </div>
+                        <div class="comentarios-seccion">
+                            <h4>Agregar Comentarios</h4>
+                            <textarea class="input-comentarios" placeholder="Agregar comentario..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="calendario-columna">
+                        <div class="calendario">
+                            <div class="mes-calendario">
+                                <span>Enero 2027</span>
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+                            <div class="tabla-calendario">
+                                <div class="nombre-dia">M</div><div class="nombre-dia">T</div><div class="nombre-dia">W</div>
+                                <div class="nombre-dia">T</div><div class="nombre-dia">F</div><div class="nombre-dia">S</div><div class="nombre-dia">S</div>
+                                <div class="dia"></div><div class="dia"></div><div class="dia"></div><div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div>
+                                <div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div>
+                                <div class="dia">12</div><div class="dia">13</div><div class="dia bloqueado">14</div><div class="dia bloqueado">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia bloqueado">18</div>
+                                <div class="dia bloqueado">19</div><div class="dia bloqueado">20</div><div class="dia bloqueado">21</div>
+                            </div>
+                        </div>
+                        <p class="conteo-dias">6 días solicitados</p>
+                    </div>
+                </div>
+
+                <div class="btn-admin-vacaciones">
+                    <button class="btn btn-feriado">Aprobar</button>
+                    <button class="btn btn-bloquear">Denegar</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="columna-footer footer-nav">
-        <a href="./pagina_principal.html">Inicio</a>
-        <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Producto</a>
-        <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Sobre Nosotros</a>
-        <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Contacto</a>
-        <a href="./pagina_temporal.html">Guía de Usuario</a>
-    </div>
+    <footer>
+        <div>
+            <img class="logo-voluntweb-footer" src="../img/voluntweb.png" alt="Logo VoluntWeb">
+            <p>2026 © VoluntWeb</p>
+            <p>Todos los derechos reservados</p>
+            <a href="./pagina_temporal.html" target="_blank">Términos y Condiciones</a>
+            <div class="ayuda">
+                <a href="./pagina_temporal.html" target="_blank">¿Necesitas ayuda?</a>
+            </div>
+        </div>
 
-    <div class="columna-footer redes-sociales">
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="http://www.x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-</footer>
+        <div class="columna-footer footer-nav">
+            <a href="./pagina_principal.html">Inicio</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Producto</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Sobre Nosotros</a>
+            <a href="https://github.com/JorgeLeandroQuiros/proyecto_desarrollo_web" target="_blank">Contacto</a>
+            <a href="./pagina_temporal.html">Guía de Usuario</a>
+        </div>
+
+        <div class="columna-footer redes-sociales">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="http://www.x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
