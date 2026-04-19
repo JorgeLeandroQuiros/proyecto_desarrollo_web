@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rikimakka - Portal IT</title>
     <link rel="icon" href="../img/IT.svg" alt="Logo IT">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/portal_it.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -72,6 +72,10 @@
 
         <section class="contenedor-tabla">
             <h2 class="titulo-tabla">Proyectos Recientes</h2>
+
+            <!-- BUSCADOR -->
+            <input type="text" id="buscador" placeholder="Buscar proyecto..." style="margin:10px 20px; padding:8px;">
+
             <table class="tabla-proyectos">
                 <thead>
                     <tr>
@@ -81,67 +85,76 @@
                         <th>ACCIONES</th>
                     </tr>
                 </thead>
-                <tbody>
+
+                <!-- ID IMPORTANTE -->
+                <tbody id="tablaProyectos">
+
                     <tr>
                         <td><strong>GlaxoSmithKline</strong></td>
                         <td>$125,000</td>
                         <td><span class="insignia-estado activo">Activo</span></td>
                         <td class="acciones">
-                            <button class="btn-icono" title="Ver"><i class="fas fa-eye"></i></button>
-                            <button class="btn-icono" title="Editar"><i class="fas fa-edit"></i></button>
-                            <button class="btn-icono" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn-icono ver"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icono editar"><i class="fas fa-edit"></i></button>
+                            <button class="btn-icono eliminar"><i class="fas fa-trash-alt"></i></button>
                         </td>
                     </tr>
+
                     <tr>
                         <td><strong>G&E</strong></td>
                         <td>$89,500</td>
                         <td><span class="insignia-estado activo">Activo</span></td>
                         <td class="acciones">
-                            <button class="btn-icono" title="Ver"><i class="fas fa-eye"></i></button>
-                            <button class="btn-icono" title="Editar"><i class="fas fa-edit"></i></button>
-                            <button class="btn-icono" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn-icono ver"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icono editar"><i class="fas fa-edit"></i></button>
+                            <button class="btn-icono eliminar"><i class="fas fa-trash-alt"></i></button>
                         </td>
                     </tr>
+
                     <tr>
                         <td><strong>CCSS</strong></td>
                         <td>$215,000</td>
                         <td><span class="insignia-estado pausado">En Pausa</span></td>
                         <td class="acciones">
-                            <button class="btn-icono" title="Ver"><i class="fas fa-eye"></i></button>
-                            <button class="btn-icono" title="Editar"><i class="fas fa-edit"></i></button>
-                            <button class="btn-icono" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn-icono ver"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icono editar"><i class="fas fa-edit"></i></button>
+                            <button class="btn-icono eliminar"><i class="fas fa-trash-alt"></i></button>
                         </td>
                     </tr>
+
                     <tr>
                         <td><strong>IKEA</strong></td>
                         <td>$340,000</td>
                         <td><span class="insignia-estado activo">Activo</span></td>
                         <td class="acciones">
-                            <button class="btn-icono" title="Ver"><i class="fas fa-eye"></i></button>
-                            <button class="btn-icono" title="Editar"><i class="fas fa-edit"></i></button>
-                            <button class="btn-icono" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn-icono ver"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icono editar"><i class="fas fa-edit"></i></button>
+                            <button class="btn-icono eliminar"><i class="fas fa-trash-alt"></i></button>
                         </td>
                     </tr>
+
                     <tr>
                         <td><strong>Microsoft</strong></td>
                         <td>$67,800</td>
                         <td><span class="insignia-estado completado">Completado</span></td>
                         <td class="acciones">
-                            <button class="btn-icono" title="Ver"><i class="fas fa-eye"></i></button>
-                            <button class="btn-icono" title="Editar"><i class="fas fa-edit"></i></button>
-                            <button class="btn-icono" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn-icono ver"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icono editar"><i class="fas fa-edit"></i></button>
+                            <button class="btn-icono eliminar"><i class="fas fa-trash-alt"></i></button>
                         </td>
                     </tr>
+
                     <tr>
                         <td><strong>Crunchyroll</strong></td>
                         <td>$95,000</td>
                         <td><span class="insignia-estado activo">Activo</span></td>
                         <td class="acciones">
-                            <button class="btn-icono" title="Ver"><i class="fas fa-eye"></i></button>
-                            <button class="btn-icono" title="Editar"><i class="fas fa-edit"></i></button>
-                            <button class="btn-icono" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn-icono ver"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icono editar"><i class="fas fa-edit"></i></button>
+                            <button class="btn-icono eliminar"><i class="fas fa-trash-alt"></i></button>
                         </td>
                     </tr>
+
                 </tbody>
             </table>
         </section>
@@ -173,5 +186,9 @@
             <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
+
+    
+    <script src="Portal_IT.js"></script>
+
 </body>
 </html>
