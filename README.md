@@ -85,6 +85,9 @@ El proyecto consiste en el diseño y desarrollo de la interfaz web del Sistema d
     * **Nota:** Para regresar es necesario utilizar la flecha de retroceder en el navegador. La implementación de el cierre de la ventana emergente se debe de realizar utilizando Javascript.
 * Cualquier funcionalidad no implementada o en desarrollo redirige a [En Construcción](https://jorgeleandroquiros.github.io/proyecto_desarrollo_web/src/assets/html/pagina_temporal.html)
 
+### Alcance del Tercer Entregable
+* Incluye los scripts de javascript para agregar dinamismo y validación al frontend de la página web.
+
 ## Estrategia para los Branches del Repositorio
 
 Para el manejo del repositorio y de los diferentes elementos se seguirá la siguiente estrategia:
